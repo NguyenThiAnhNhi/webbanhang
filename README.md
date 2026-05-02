@@ -35,7 +35,6 @@ Dự án website thương mại điện tử bán phụ kiện thú cưng, đư�
 - Quản lý sản phẩm (thêm, sửa, xóa)
 - Quản lý danh mục sản phẩm
 - Quản lý đơn hàng
-- Quản lý người dùng
 - Cấu hình hệ thống
 
 ---
