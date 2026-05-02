@@ -175,9 +175,11 @@ http://localhost/webbanhang/admin/
 
 ## 👤 Thông tin sinh viên
 
-| Thông tin | Chi tiết | Lớp | Mã sinh viên |
-|-----------|----------|-----------|----------|
-| Họ và tên | Nguyễn Thị Anh Nhi | 22CNTT1 | 3120222097 |
+| Thông tin | Chi tiết | 
+|-----------|----------|
+| Họ và tên | Nguyễn Thị Ánh Nhi |
+| Lớp | 22CNTT1 |
+| Mã sinh viên | 3120222097 |
 | GitHub | [NguyenThiAnhNhi/webbanhang](https://github.com/NguyenThiAnhNhi/webbanhang) |
 
 ---
