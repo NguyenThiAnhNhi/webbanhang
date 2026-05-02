@@ -146,6 +146,7 @@ http://localhost/webbanhang/
 | Loại tài khoản |usename | Mật khẩu |
 |----------------|---------------|----------|
 | Quản trị viên (Admin) | `anhnhi` | `12341234` |
+
 | Loại tài khoản |email | Mật khẩu |
 |----------------|---------------|----------|
 | Người dùng thường | `nhinguyen9424@gmail.com` | `12345678` |
