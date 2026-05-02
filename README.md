@@ -6,6 +6,7 @@
 
 ## 📋 Mục lục
 
+- [Thông tin chung](#thông-tin-chung)
 - [Giới thiệu](#giới-thiệu)
 - [Công nghệ sử dụng](#công-nghệ-sử-dụng)
 - [Cấu trúc thư mục](#cấu-trúc-thư-mục)
@@ -16,7 +17,7 @@
 
 ---
 
-## 1. Thông tin chung
+## Thông tin chung
 
 | Mục | Thông tin |
 |:---|:---|
