@@ -1,132 +1,186 @@
 # 🐾 Web Bán Phụ Kiện Thú Cưng
 
-Dự án website thương mại điện tử bán phụ kiện thú cưng, được xây dựng bằng PHP thuần kết hợp HTML/CSS. Website cung cấp giao diện mua sắm cho khách hàng và trang quản trị dành cho admin.
+Đây là website bán phụ kiện thú cưng được xây dựng bằng PHP thuần và MySQL, chạy trên môi trường localhost (XAMPP).
 
 ---
 
 ## 📋 Mục lục
 
 - [Giới thiệu](#giới-thiệu)
-- [Tính năng](#tính-năng)
 - [Công nghệ sử dụng](#công-nghệ-sử-dụng)
-- [Cấu trúc dự án](#cấu-trúc-dự-án)
+- [Cấu trúc thư mục](#cấu-trúc-thư-mục)
 - [Yêu cầu hệ thống](#yêu-cầu-hệ-thống)
-- [Hướng dẫn cài đặt](#hướng-dẫn-cài-đặt)
-- [Tác giả](#tác-giả)
+- [Hướng dẫn cài đặt và chạy](#hướng-dẫn-cài-đặt-và-chạy)
+- [Tài khoản mặc định](#tài-khoản-mặc-định)
+- [Chức năng chính](#chức-năng-chính)
 
 ---
 
-## 🎯 Giới thiệu
+## 🌟 Giới thiệu
 
-**Web Bán Phụ Kiện Thú Cưng** là một ứng dụng web thương mại điện tử cho phép người dùng duyệt và mua sắm các sản phẩm phụ kiện dành cho thú cưng. Hệ thống bao gồm giao diện người dùng thân thiện và trang quản trị để quản lý sản phẩm, đơn hàng.
-
----
-
-## ✨ Tính năng
-
-### Phía khách hàng
-- Xem danh sách sản phẩm phụ kiện thú cưng
-- Tìm kiếm và lọc sản phẩm theo danh mục
-- Xem chi tiết sản phẩm
-- Giỏ hàng và đặt hàng
-- Đăng ký / Đăng nhập tài khoản
-
-### Phía quản trị (Admin)
-- Quản lý sản phẩm (thêm, sửa, xóa)
-- Quản lý danh mục sản phẩm
-- Quản lý đơn hàng
-- Cấu hình hệ thống
+Website bán hàng online dành cho phụ kiện thú cưng, bao gồm giao diện người dùng để xem và đặt hàng sản phẩm, và trang quản trị (admin) để quản lý hàng hóa, đơn hàng.
 
 ---
 
-## 🛠️ Công nghệ sử dụng
+## 🛠 Công nghệ sử dụng
 
-| Công nghệ | Mục đích |
-|-----------|----------|
-| **PHP** | Ngôn ngữ lập trình phía server (71%) |
-| **CSS** | Định dạng giao diện người dùng (18.6%) |
-| **HTML** | Cấu trúc trang web |
-| **MySQL** | Cơ sở dữ liệu |
-| **Font Awesome 6** | Thư viện icon |
-| **Apache/XAMPP** | Môi trường chạy ứng dụng |
+| Thành phần | Công nghệ |
+|------------|-----------|
+| Ngôn ngữ Backend | PHP (thuần, không dùng framework) |
+| Cơ sở dữ liệu | MySQL |
+| Frontend | HTML, CSS |
+| Icon | Font Awesome 6.0 |
+| Môi trường chạy | XAMPP (Apache + MySQL) |
 
 ---
 
-## 📁 Cấu trúc dự án
+## 📁 Cấu trúc thư mục
 
 ```
 webbanhang/
-├── index.php           # File khởi động chính của ứng dụng
-├── admin/              # Trang quản trị (Admin Panel)
+│
+├── index.php              # Trang chủ chính của website
+│
+├── admin/                 # Khu vực quản trị (admin)
 │   └── config/
-│       └── config.php  # File cấu hình kết nối cơ sở dữ liệu
-├── page/               # Các trang giao diện người dùng
-│   ├── header.php      # Phần đầu trang (header)
-│   ├── menu.php        # Thanh điều hướng (navigation)
-│   ├── main.php        # Nội dung chính của trang
-│   └── footer.php      # Phần cuối trang (footer)
-├── css/                # File stylesheet
-│   └── style.css       # CSS tùy chỉnh giao diện
-└── images/             # Thư mục chứa hình ảnh sản phẩm và giao diện
+│       └── config.php     # File cấu hình kết nối database
+│
+├── page/                  # Các trang giao diện người dùng
+│   ├── header.php         # Phần đầu trang (logo, thanh điều hướng)
+│   ├── menu.php           # Menu danh mục sản phẩm
+│   ├── main.php           # Nội dung chính (danh sách sản phẩm)
+│   └── footer.php         # Phần chân trang
+│
+├── css/                   # File CSS tùy chỉnh giao diện
+│   └── style.css
+│
+└── images/                # Hình ảnh sản phẩm và giao diện
 ```
 
 ---
 
-## ⚙️ Yêu cầu hệ thống
+## 💻 Yêu cầu hệ thống
 
-- **PHP** >= 7.4
-- **MySQL** >= 5.7
-- **Apache** (khuyến nghị dùng XAMPP hoặc WAMP)
-- Trình duyệt web hiện đại (Chrome, Firefox, Edge,...)
+- **XAMPP** phiên bản 7.4 trở lên (bao gồm Apache và MySQL)
+- **Trình duyệt** web bất kỳ (Chrome, Firefox, Edge,...)
+- **Hệ điều hành**: Windows / macOS / Linux
+
+> ⬇️ Tải XAMPP tại: https://www.apachefriends.org/
 
 ---
 
-## 🚀 Hướng dẫn cài đặt
+## 🚀 Hướng dẫn cài đặt và chạy
 
-### 1. Clone repository
+### Bước 1 — Tải mã nguồn về máy
 
 ```bash
 git clone https://github.com/NguyenThiAnhNhi/webbanhang.git
 ```
 
-### 2. Sao chép vào thư mục server
+Hoặc bấm **Code → Download ZIP** trên GitHub rồi giải nén.
 
-Sao chép toàn bộ thư mục `webbanhang` vào thư mục `htdocs` (XAMPP) hoặc `www` (WAMP):
+---
+
+### Bước 2 — Sao chép vào thư mục XAMPP
+
+Sao chép (hoặc di chuyển) toàn bộ thư mục `webbanhang` vào bên trong:
 
 ```
-C:/xampp/htdocs/webbanhang/
+C:\xampp\htdocs\webbanhang
 ```
 
-### 3. Tạo cơ sở dữ liệu
+*(Trên macOS: `/Applications/XAMPP/htdocs/webbanhang`)*
 
-- Mở **phpMyAdmin** tại `http://localhost/phpmyadmin`
-- Tạo database mới (ví dụ: `webbanhang`)
-- Import file SQL của dự án (nếu có)
+---
 
-### 4. Cấu hình kết nối database
+### Bước 3 — Khởi động XAMPP
 
-Mở file `admin/config/config.php` và chỉnh sửa thông tin kết nối:
+Mở **XAMPP Control Panel** và bật (Start) hai dịch vụ:
+- ✅ **Apache**
+- ✅ **MySQL**
+
+---
+
+### Bước 4 — Tạo Database
+
+1. Mở trình duyệt, vào địa chỉ: `http://localhost/phpmyadmin`
+2. Chọn **"New"** (Tạo mới) ở cột bên trái
+3. Đặt tên database là: **`webbanhang`** → Bấm **Create**
+4. Sau khi tạo xong, chọn tab **Import**
+5. Bấm **"Choose File"** → chọn file `webbanhang.sql` (được đính kèm bài nộp)
+6. Bấm **Go** để import dữ liệu
+
+> ⚠️ **Lưu ý:** Nếu tên database hoặc tên bảng khác, vui lòng kiểm tra file `admin/config/config.php` và chỉnh lại cho khớp.
+
+---
+
+### Bước 5 — Kiểm tra cấu hình kết nối
+
+Mở file `admin/config/config.php` và kiểm tra các thông tin sau:
 
 ```php
 $host = "localhost";
-$dbname = "webbanhang";
-$username = "root";
-$password = "";
+$dbname = "webbanhang";   // Tên database vừa tạo
+$username = "root";        // Mặc định của XAMPP
+$password = "";            // Mặc định của XAMPP là không có mật khẩu
 ```
 
-### 5. Khởi động ứng dụng
-
-- Bật **Apache** và **MySQL** trong XAMPP Control Panel
-- Truy cập: [http://localhost/webbanhang](http://localhost/webbanhang)
+Nếu thông tin khác, chỉnh lại cho đúng với máy của bạn.
 
 ---
 
-## 👩‍💻 Tác giả
+### Bước 6 — Chạy website
 
-**Nguyễn Thị Anh Nhi**
+Mở trình duyệt và truy cập:
 
-- GitHub: [@NguyenThiAnhNhi](https://github.com/NguyenThiAnhNhi)
+```
+http://localhost/webbanhang/
+```
 
 ---
 
-> 🐶🐱 *Dự án được xây dựng phục vụ mục đích học tập lập trình web PHP.*
+## 🔑 Tài khoản mặc định
+
+> *(Điền thông tin tài khoản admin vào đây trước khi nộp)*
+
+| Loại tài khoản | Tên đăng nhập | Mật khẩu |
+|----------------|---------------|----------|
+| Quản trị viên (Admin) | `admin` | `123456` |
+| Người dùng thường | `user` | `123456` |
+
+**Đường dẫn trang Admin:**
+```
+http://localhost/webbanhang/admin/
+```
+
+---
+
+## ✨ Chức năng chính
+
+### Giao diện người dùng (User)
+- Xem danh sách sản phẩm phụ kiện thú cưng
+- Xem chi tiết sản phẩm
+- Thêm sản phẩm vào giỏ hàng
+- Đặt hàng / Mua hàng
+
+### Trang quản trị (Admin)
+- Quản lý sản phẩm (thêm, sửa, xóa)
+- Quản lý danh mục sản phẩm
+- Quản lý đơn hàng
+- Quản lý người dùng
+
+---
+
+## 👤 Thông tin sinh viên
+
+| Thông tin | Chi tiết |
+|-----------|----------|
+| Họ và tên | Nguyễn Thị Anh Nhi |
+| GitHub | [NguyenThiAnhNhi/webbanhang](https://github.com/NguyenThiAnhNhi/webbanhang) |
+
+---
+
+> 💡 Nếu gặp lỗi trong quá trình cài đặt, hãy kiểm tra lại:
+> 1. Apache và MySQL đã được Start trong XAMPP chưa?
+> 2. Tên thư mục đặt đúng trong `htdocs` chưa?
+> 3. Tên database trong `config.php` có trùng với database đã tạo không?
