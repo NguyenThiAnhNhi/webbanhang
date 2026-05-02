@@ -16,6 +16,27 @@
 
 ---
 
+## 1. Thông tin chung
+
+| Mục | Thông tin |
+|:---|:---|
+| **Tên đề tài (Tiếng Việt)** | Xây dựng website bán phụ kiện thú cưng tích hợp chatbot AI hỗ trợ nhận diện hình ảnh thú cưng để đề xuất phụ kiện phù hợp |
+| **Tên đề tài (Tiếng Anh)** | Building a website selling pet accessories that integrates AI chatbot to support pet image recognition to produce suitable accessories |
+| **Sinh viên thực hiện** | Nguyễn Thị Ánh Nhi |
+| **Mã số sinh viên** | 3120222097 |
+| **Lớp** | 22CNTT1 |
+| **Email sinh viên** | 3120222097@ued.udn.vn |
+| **Số điện thoại** | 0795984139 |
+| **Giảng viên hướng dẫn** | TS. Nguyễn Trần Quốc Vinh |
+| **Đơn vị công tác GVHD** | Khoa Toán — Tin, Trường Đại học Sư phạm — Đại học Đà Nẵng |
+| **Email GVHD** | ntqvinh@ued.udn.vn |
+| **Niên khoá** | 2022 — 2026 |
+| **Năm bảo vệ** | 2026 |
+| **Ngành đào tạo** | Công nghệ Thông tin |
+
+---
+
+
 ## 🌟 Giới thiệu
 
 Website bán hàng online dành cho phụ kiện thú cưng, bao gồm giao diện người dùng để xem và đặt hàng sản phẩm, và trang quản trị (admin) để quản lý hàng hóa, đơn hàng.
@@ -173,16 +194,6 @@ http://localhost/webbanhang/admin/
 
 ---
 
-## 👤 Thông tin sinh viên
-
-| Thông tin | Chi tiết | 
-|-----------|----------|
-| Họ và tên | Nguyễn Thị Ánh Nhi |
-| Lớp | 22CNTT1 |
-| Mã sinh viên | 3120222097 |
-| GitHub | [NguyenThiAnhNhi/webbanhang](https://github.com/NguyenThiAnhNhi/webbanhang) |
-
----
 
 > 💡 Nếu gặp lỗi trong quá trình cài đặt, hãy kiểm tra lại:
 > 1. Apache và MySQL đã được Start trong XAMPP chưa?
