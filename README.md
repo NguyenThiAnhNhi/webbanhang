@@ -141,8 +141,6 @@ http://localhost/webbanhang/
 
 ## 🔑 Tài khoản mặc định
 
-> *(Điền thông tin tài khoản admin vào đây trước khi nộp)*
-
 | Loại tài khoản |usename | Mật khẩu |
 |----------------|---------------|----------|
 | Quản trị viên (Admin) | `anhnhi` | `12341234` |
@@ -164,6 +162,7 @@ http://localhost/webbanhang/admin/
 - Xem danh sách sản phẩm phụ kiện thú cưng
 - Xem chi tiết sản phẩm
 - Thêm sản phẩm vào giỏ hàng
+- Tìm kiếm sản phẩm
 - Đặt hàng / Mua hàng
 
 ### Trang quản trị (Admin)
@@ -176,9 +175,9 @@ http://localhost/webbanhang/admin/
 
 ## 👤 Thông tin sinh viên
 
-| Thông tin | Chi tiết |
-|-----------|----------|
-| Họ và tên | Nguyễn Thị Anh Nhi |
+| Thông tin | Chi tiết | Lớp | Mã sinh viên |
+|-----------|----------|-----------|----------|
+| Họ và tên | Nguyễn Thị Anh Nhi | 22CNTT1 | 3120222097 |
 | GitHub | [NguyenThiAnhNhi/webbanhang](https://github.com/NguyenThiAnhNhi/webbanhang) |
 
 ---
