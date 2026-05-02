@@ -143,10 +143,12 @@ http://localhost/webbanhang/
 
 > *(Điền thông tin tài khoản admin vào đây trước khi nộp)*
 
-| Loại tài khoản | Tên đăng nhập | Mật khẩu |
+| Loại tài khoản |usename | Mật khẩu |
 |----------------|---------------|----------|
-| Quản trị viên (Admin) | `admin` | `123456` |
-| Người dùng thường | `user` | `123456` |
+| Quản trị viên (Admin) | `anhnhi` | `12341234` |
+| Loại tài khoản |email | Mật khẩu |
+|----------------|---------------|----------|
+| Người dùng thường | `nhinguyen9424@gmail.com` | `12345678` |
 
 **Đường dẫn trang Admin:**
 ```
